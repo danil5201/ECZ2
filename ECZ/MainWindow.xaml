@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ECZ"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="221.831" Width="771.026">
     <Grid>
-        
+        <DataGrid Name="dgogrenci" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="185" Margin="10,0,0,0" VerticalAlignment="Top" Width="472" MouseUp="dgogrenci_MouseUp">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding First_name}" Header="Имя" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Last_name}" Header="Фамилия" Width="2*"/>
+                <DataGridTextColumn Binding="{Binding Middle_name}" Header="Отчество" Width="2*"/>
+                <DataGridTextColumn Binding="{Binding Age}" Header="Возраст" Width="2*"/>
+                <DataGridTextColumn Binding="{Binding Post}" Header="Должность" Width="2*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="487,150,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="487,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="487,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="487,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="487,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="487,122,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
