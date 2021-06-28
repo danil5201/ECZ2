@@ -39,7 +39,7 @@
           <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="gr693_pdvEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="gr693_pdvEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Employee" EntityType="Self.Employee" />
         </EntityContainer>
       </Schema>
@@ -47,7 +47,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище gr693_pdvModelContainer" CdmEntityContainer="gr693_pdvEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище gr693_pdvModelContainer" CdmEntityContainer="gr693_pdvEntities1">
           <EntitySetMapping Name="Employee">
             <EntityTypeMapping TypeName="gr693_pdvModel.Employee">
               <MappingFragment StoreEntitySet="Employee">

@@ -13,10 +13,10 @@ namespace ECZ
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class gr693_pdvEntities : DbContext
+    public partial class gr693_pdvEntities1 : DbContext
     {
-        public gr693_pdvEntities()
-            : base("name=gr693_pdvEntities")
+        public gr693_pdvEntities1()
+            : base("name=gr693_pdvEntities1")
         {
         }
     
